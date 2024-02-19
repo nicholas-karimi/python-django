@@ -1,0 +1,15 @@
+{
+  "name": "djwebpack",
+  "version": "1.0.0",
+  "description": "Just testing django web pack stuff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --watch --mode development"
+  },
+  "author": "nicholas-karimi",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}
