@@ -1,0 +1,63 @@
+GET http://127.0.0.1:8000/api/books/two-scoop-django
+
+### 
+
+GET http://127.0.0.1:8000/api/books
+
+###
+
+GET http://127.0.0.1:8000/api/authors
+
+###
+
+POST http://127.0.0.1:8000/api/books/
+Content-Type: application/json
+
+
+[
+    {
+    "title": "Not a real book v2",
+    "description": "You seriously wanna read this?",
+    "author_id": 3,
+    "isbn": "847837839023",
+    "pub_date": "2024-02-14"
+    },
+    {
+        "title":"Speaking JavaScript",
+        "description":"Like it or not, JavaScript is everywhere these days -from browser to server to mobile- and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who once found himself in the same position.",
+        "author_id":1,
+        "isbn":"9781449365035",
+        "pub_date":"2014-04-08",
+    },
+    {
+        "title": "Learning JavaScript Design Patterns",
+        "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-date with the latest best practices, this book is for you.",
+        "author_id": 2,
+        "isbn": "9781449331818",
+        "pub_date": "2012-08-30",
+    },
+    {
+        "title": "You Don't Know JS Yet",
+        "description": "The worldwide best selling You Don't Know JS book series is back for a 2nd edition: You Don't Know JS Yet. All 6 books are brand new, rewritten to cover all sides of JS for 2020 and beyond.",
+        "author_id": 1,
+        "isbn": "9798602477429",
+        "pub_date": "2020-01-28",
+    }
+]
+
+
+
+### 
+
+DELETE  http://127.0.0.1:8000/api/books/joy-in-the-morning
+Content-Type: application/json
+
+###
+
+PATCH http://127.0.0.1:8000/api/books/not-a-real-book
+Content-Type: application/json
+
+{
+    "title": "Could be real",
+
+}
